@@ -1,0 +1,240 @@
+:root{
+    --second-background-color: #2F303A;
+    --third-background-color: #F5F4FA;
+    --accent-color: #2196F3;
+    --active-color: #188CE8;
+    --main-text-color: #212121;
+    --second-text-color: #757575;
+    --third-text-color: white;
+    --logo-font-size: 26px;
+    --font-size-h1: 44px;
+    --first-font-size: 36px;
+    --second-font-size: 18px;
+    --third-font-size: 16px;
+    --forth-font-size: 14px;
+    --main-letter-spacing: 0.03em;
+    --second-letter-spacing: 0.02em;
+    --third-letter-spacing: 0.06em;
+}
+
+/*   General styles   */
+
+body{
+    background-color: white;
+    color: #212121;
+    font-family: Roboto, -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+    letter-spacing: var(--main-letter-spacing);
+}
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+/*--------Index styles--------*/
+
+/*   Header styles   */
+
+.logo-header{
+    color: black;
+    text-decoration: none;
+    font-family: Raleway, -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+    font-size: var(--logo-font-size);
+    font-weight: 700;
+}
+.logo-header-blue{
+    color: var(--accent-color);
+}
+
+.nav-menu{
+    list-style: none;
+}
+.nav-menu-link{
+    color: var(--main-text-color);
+    text-decoration: none;
+     font-family: Roboto, -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+    font-size: var(--forth-font-size);
+    font-weight: 500;
+    letter-spacing: var(--second-letter-spacing);
+}
+.nav-menu-link:hover, .nav-menu-link:focus{
+    color: var(--accent-color);
+}
+.nav-menu .current{
+    color: var(--accent-color);
+}
+
+.header-contacts{
+    list-style: none;
+}
+.header-contacts-link{
+    text-decoration: none;
+     font-family: Roboto, -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+    font-size: var(--forth-font-size);
+    font-weight: 500;
+    color: var(--second-text-color);
+    letter-spacing: var(--second-letter-spacing);
+}
+.header-contacts-link:hover, .header-contacts-link:focus{
+    color: var(--accent-color);
+}
+
+/*   Hero styles   */
+
+.hero{
+    background-color: var(--second-background-color);
+}
+.hero-heading{
+    color: var(--third-text-color);
+    text-align: center;
+    font-size: var(--font-size-h1);
+    font-weight: 900;
+    letter-spacing: var(--third-letter-spacing);
+    line-height: 1.4;
+}
+.hero-button{
+    background-color: var(--accent-color);
+    color: var(--third-text-color);
+     font-family: Roboto, -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+    font-size: var(--third-font-size);
+    font-weight: 700;
+    line-height: 1.9;
+    letter-spacing: var(--third-letter-spacing);
+}
+.hero-button:hover, .hero-button:focus{
+    background-color: var(--active-color);
+    cursor: pointer;
+}
+
+/*   Features styles   */
+
+.features-all{
+    list-style: none;
+}
+.features-heading{
+    font-size: var(--forth-font-size);
+    font-weight: 700;
+}
+.features-text{
+    color: var(--second-text-color);
+    font-size: var(--forth-font-size);
+    line-height: 1.7;
+}
+
+/*   What we do styles   */
+
+.work-list{
+    list-style: none;
+}
+.work-heading{
+    font-size: var(--first-font-size);
+    font-weight: 700;
+}
+
+/*   Our team styles   */
+
+.team{
+    background-color: var(--third-background-color);
+}
+.team-heading{
+    font-size: var(--first-font-size);
+    font-weight: 700;
+}
+.team-members{
+    list-style: none;
+}
+.team-member{
+    background-color: white;
+}
+.member-name{
+    font-size: var(--third-font-size);
+    font-weight: 500;
+}
+.member-job{
+    color: var(--second-text-color);
+}
+
+/*   Footer styles  */
+
+footer{
+    background-color: var(--second-background-color);
+}
+.logo-footer{
+    color: var(--third-text-color);
+    text-decoration: none;
+    font-family: Raleway, -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+    font-size: var(--logo-font-size);
+    font-weight: 700;
+    letter-spacing: var(--main-letter-spacing);
+}
+.logo-footer-blue{
+    color: var(--accent-color);
+}
+.address-info{
+    list-style: none;
+    font-size: var(--forth-font-size);
+    font-style: normal;
+    line-height: 1.7;
+}
+.footer-contacts{
+    color: var(--third-text-color);
+    text-decoration: none;
+    font-family: Roboto, -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+    letter-spacing: var(--main-letter-spacing);
+}
+.footer-contacts:hover, .footer-contacts:focus{
+    color: var(--accent-color);
+}
+.footer-contacts-info{
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    font-family: Roboto, -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;   
+}
+
+/*--------Portfolio styles--------*/
+
+/*   Filters styles   */
+
+.filters{
+    list-style: none;
+}
+.filter-button{
+    background-color: var(--third-background-color);
+    font-family: Roboto, -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+    font-size: var(--third-font-size);
+    font-weight: 500;
+}
+.filter-button:hover, .filter-button:focus, .filter-button:active{
+    background-color: var(--accent-color);
+    color: var(--third-text-color);
+    cursor: pointer;
+}
+
+/*   Portfolio elements styles   */
+
+.portfolio-list{
+    list-style: none;
+}
+.portfolio-element{
+    color: var(--main-text-color);
+    text-decoration: none;
+    font-family: Roboto, -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+}
+.portfolio-element-heading{
+    font-size: var(--second-font-size);
+    font-weight: 700;
+    line-height: 2;
+    letter-spacing: var(--third-letter-spacing);
+}
+.portfolio-element-text{
+    font-size: var(--third-font-size);
+    color: var(--second-text-color);
+    line-height: 1.9;
+}
