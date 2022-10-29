@@ -20,10 +20,21 @@
 /*   General styles   */
 
 body{
+    margin: 0;
+    padding: 0;
     background-color: white;
     color: #212121;
     font-family: Roboto, -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
     letter-spacing: var(--main-letter-spacing);
+}
+h1,h2,h3,p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.list{
+    display: block;
+    margin: 0;
+    padding-left: 0;
 }
 .visually-hidden {
     position: absolute;
@@ -41,8 +52,18 @@ body{
 /*--------Index styles--------*/
 
 /*   Header styles   */
+.header-section{
+    border-bottom: 1px solid #ECECEC;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
 
 .logo-header{
+    margin-right: 95px;
     color: black;
     text-decoration: none;
     font-family: Raleway, -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
@@ -53,13 +74,24 @@ body{
     color: var(--accent-color);
 }
 
+.navigation{
+    display: flex;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
 .nav-menu{
+    display: flex;
     list-style: none;
 }
+.nav-menu .nav-menu-element+.nav-menu-element{
+    padding-left: 50px;
+}
+
 .nav-menu-link{
     color: var(--main-text-color);
     text-decoration: none;
-     font-family: Roboto, -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+    font-family: Roboto, -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
     font-size: var(--forth-font-size);
     font-weight: 500;
     letter-spacing: var(--second-letter-spacing);
@@ -71,18 +103,23 @@ body{
     color: var(--accent-color);
 }
 
-.header-contacts{
+.nav-contacts{
+    display: flex;
+    margin-left: auto;
     list-style: none;
 }
-.header-contacts-link{
+.nav-contacts .nav-contacts-element + .nav-contacts-element{
+    padding-left: 50px;
+}
+.nav-contacts-link{
     text-decoration: none;
-     font-family: Roboto, -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+    font-family: Roboto, -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
     font-size: var(--forth-font-size);
     font-weight: 500;
     color: var(--second-text-color);
     letter-spacing: var(--second-letter-spacing);
 }
-.header-contacts-link:hover, .header-contacts-link:focus{
+.nav-contacts-link:hover, .nav-contacts-link:focus{
     color: var(--accent-color);
 }
 
