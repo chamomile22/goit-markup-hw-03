@@ -140,6 +140,7 @@ img{
 }
 .hero-container{    
     padding: 200px 237px;
+    text-align: center;
 }
 .hero-heading{
     color: var(--third-text-color);
@@ -154,10 +155,7 @@ img{
 
 }
 .hero-button{
-    display: block;
     margin-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
     padding: 10px 32px;
 
     border: none;
