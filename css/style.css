@@ -181,7 +181,7 @@ img{
 }
 
 /*   Features styles   */
-.features-container{
+.features{
     padding-top: 94px;
     padding-bottom: 94px;
 }
@@ -210,7 +210,7 @@ img{
 }
 
 /*   What we do styles   */
-.work-container{
+.work{
     padding-bottom: 94px;
 }
 .work-heading{
@@ -232,11 +232,10 @@ img{
 }
 
 /*   Our team styles   */
-.team-container{
+.team{
     padding-top: 94px;
     padding-bottom: 94px;
-}
-.team{
+
     background-color: var(--third-background-color);
 }
 .team-heading{
@@ -279,12 +278,11 @@ img{
 
 /*   Footer styles  */
 
-footer{
-    background-color: var(--second-background-color);
-}
-.footer-container{
+.footer-section{
     padding-top: 60px;
     padding-bottom: 60px;
+
+    background-color: var(--second-background-color);
 }
 .logo-footer{
     color: var(--third-text-color);
@@ -332,8 +330,9 @@ footer{
 /*--------Portfolio styles--------*/
 
 /*   Filters styles   */
-.portfolio-container{
-    margin-top: 94px;
+.portfolio{
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 .filters{
     margin-bottom: 50px;
@@ -367,7 +366,6 @@ footer{
 /*   Portfolio elements styles   */
 
 .portfolio-list{
-    margin-bottom: 94px;
     display: flex;
     flex-wrap: wrap;
     list-style: none;
